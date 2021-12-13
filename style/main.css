@@ -32,7 +32,7 @@
     background: #322e41;
 }
 .navbar-nav {
-    width: 1110px;
+    max-width: 1110px;
     min-height: 40px;
     margin: auto;
     display: flex;
@@ -55,6 +55,21 @@
 .navbar-nav-list a:hover {
     color: #d47300;
     background-color: #ffffff;
+}
+.left-nav{
+    display: none;
+}
+.button{
+    overflow: hidden;
+    background: #322e41;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.close{
+    border: 1px solid white;
 }
 /* header */
 .header {
@@ -91,6 +106,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .content-info,
 .content-items {
@@ -132,8 +148,8 @@
     gap: 25px;
 }
 .item {
-    width: 225px;
-    min-height: 200x;
+    width: 48%;
+    min-height: 200px;
     background: #ffffff;
     border-radius: 6px;
     padding: 15px;
@@ -217,4 +233,71 @@ color: #FFFFFF;
 .footer-navbar .navbar-nav-list li a:hover{
     background: transparent;
     color: #D57300;
+}
+@media (max-width:1080px){
+    .navbar{
+        padding: 6px;
+    }
+    .content-items{
+        padding-right: 35px;
+    }
+    .footer{
+        flex-wrap: nowrap;
+        padding: 30px 50px 30px;
+    }
+}
+@media (max-width:992px){
+    .navbar-nav{
+        width: 90%;
+    }
+    .content{
+        gap: 60px;
+    }
+    .content-info, .content-items{
+        width: 86%;
+        padding: 0;
+    }
+    .content-info{
+        padding: 15px;
+    }
+    .item{
+        margin: 0 auto;
+    }
+}
+@media (max-width:768px){
+    .navbar-nav{
+        width: 100%;
+    }
+    .footer{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer-navbar{
+        text-align: start;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:576px){
+    .navbar-nav{
+        padding: 0 25px;
+    }
+    .left-nav{
+        display: inline-flex;
+    }
+    .navbar-nav-list{
+        display: none;
+    }
+    .item{
+        width: 100%;
+    }
+    .footer-navbar .navbar-nav-list{
+        padding: 26px 83px 0 82px;
+    }
+}
+@media (max-width:480px){
+    /* .navbar{
+        width: 100%;
+    } */
 }
