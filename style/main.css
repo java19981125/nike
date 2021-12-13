@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+/* @font-face {
+    font-family: 'FontName';
+    src: url('FileName.eot');
+    src: url('FileName.eot?#iefix') format('embedded-opentype'),
+         url('FileName.woff') format('woff'),
+         url('FileName.ttf') format('truetype'),
+         url('FileName.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+}
+/* navbar */
+.navbar {
+    width: 100%;
+    min-height: 40px;
+    background: #322e41;
+}
+.navbar-nav {
+    width: 1110px;
+    min-height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-nav-logo img {
+    width: 100px;
+    padding: 14px 0;
+}
+.navbar-nav-list {
+    display: inline-flex;
+}
+.navbar-nav-list a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding: 25px 14px;
+}
+.navbar-nav-list a:hover {
+    color: #d47300;
+    background-color: #ffffff;
+}
+/* header */
+.header {
+    width: 100%;
+    height: 500px;
+    background: url("../images/cross.jpg") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header h1 {
+    font-size: 50px;
+    line-height: 52px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+.header p span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.content {
+    width: 100%;
+    min-height: 200px;
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.content-info,
+.content-items {
+    width: 540px;
+    min-height: 200px;
+    margin-top: -40px;
+    transform: translateY(-40px);
+}
+.content-info {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+}
+.content-info img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: flex;
+    border-radius: 6px;
+}
+.content-info h3,
+.content-items h3 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #2c2a2a;
+}
+.content-info p,
+.content-items p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #9b9b9b;
+}
+.content-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.item {
+    width: 225px;
+    min-height: 200x;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item img {
+    width: 80px;
+}
+.item h3 {
+    margin: 12px 0;
+    line-height: 20px;
+}
+.item p {
+    line-height: 16px;
+}
+.footer {
+    width: 100%;
+    min-height: 50px;
+    background: #322e41;
+    padding: 37px 0 57px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer-form,
+.footer-navbar {
+    width: 540px;
+    min-height: 50px;
+}
+.footer-form input {
+    background: #ffffff;
+    border-radius: 6px;
+    width: 350px;
+    height: 34px;
+    font-size: 18px;
+    font-weight: 400;
+line-height: 18px;
+padding: 8px 0 8px 8px;
+color: #9B9B9B;
+border: none;
+}
+.footer-form textarea {
+    width: 350px;
+    height: 86px;
+    padding: 8px 0 0 8px;
+    background: #ffffff;
+    border-radius: 6px;
+    margin: 10px 0 11px;
+    font-size: 18px;
+    font-weight: 400;
+line-height: 18px;
+color: #9B9B9B;
+}
+.footer-form button {
+    padding: 4px 134px;
+    font-size: 16px;
+    font-weight: 400;
+line-height: 18px;
+color: #FFFFFF;
+background: #544294;
+border-radius: 6px;
+}
+
+.footer-navbar .navbar-nav-list{
+    display: table-cell;
+    padding: 26px 0 0 68px;
+}
+.footer-navbar .navbar-nav-list li{
+    margin-top: 10px;
+}
+.footer-navbar .navbar-nav-list li a{
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}
+.footer-navbar .navbar-nav-list li a:hover{
+    background: transparent;
+    color: #D57300;
+}
